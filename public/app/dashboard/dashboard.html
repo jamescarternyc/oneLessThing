@@ -1,0 +1,10 @@
+<div >
+  <h1>Hello, {{user.email}}</h1>
+  <p> input your favorite artist</p>
+  <input ng-model="newArtist">
+  <button ng-click="artists.push(newArtist); newArtist=''">Add artist</button>
+  <ul>
+    <li ng-repeat="artist in artists">{{ artist }}</li>
+  </ul>
+  <button ng-click="addArtists(artists)">Add to data set</button>
+</div>

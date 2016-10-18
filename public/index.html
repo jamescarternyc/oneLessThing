@@ -1,0 +1,35 @@
+<html>
+  <head
+    <link rel="css/stylesheet" href="css/styles.css">
+  </head>
+  <body ng-app ="keepUp">
+
+    <!-- <div ng-controller="keepUpCTRL">
+      <input type ="text", name "search" ng-model="search.input"></input>
+      <h1>{{search.input}}</h1>
+    </div> -->
+    <div ng-view>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app/auth/auth.js"></script>
+    <script src="app/dashboard/dashboard.js"></script>
+    <script src= "app/services/services.js"></script>
+    <script src= "app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBZpUS98L9m3VBHv0bGXTrAZMLrXbvpNhg",
+        authDomain: "spotless-f7b4d.firebaseapp.com",
+        databaseURL: "https://spotless-f7b4d.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
